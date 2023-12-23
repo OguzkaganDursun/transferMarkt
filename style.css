@@ -6,7 +6,7 @@
 /* Header, Footer Management (Color and Height) */
 .subMiddlePanel{
     height: 85px;
-    background-color: #DBD4CA;
+    background-color: rgb(226, 226, 226);
 }
 
 /* Links Management (Font type and color) */
@@ -26,7 +26,7 @@ a:link{
 /* Main (Content) Panel Management */
 .middlePanel{
     height: 1500px;
-    background-color: purple;
+    background-color: rgb(207, 207, 207);
 }
 
 /* Header Logos  */
