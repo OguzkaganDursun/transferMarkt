@@ -30,6 +30,7 @@ li a{
     text-align: left;
     padding: 8px 8px;
     text-decoration: none;
+    /* padding-right: 8px; */
 }
 
 li a:hover{
@@ -40,6 +41,7 @@ ul li ul{
     background-color: white;
     display: none;
     position: absolute;
+    text-align: left;
     font-size: smaller;
 }
 
