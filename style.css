@@ -6,7 +6,6 @@
 
 /* NavBar Panel Management */
 .navMiddlePanel{
-    height: 6%;
     background-color: cadetblue;
     text-align: center;
 }
@@ -16,7 +15,6 @@
 ul{
     list-style-type: none;
     margin: 0;
-    padding: 15px;
     overflow: hidden;
     z-index: 999;
     font-size: large;
@@ -51,6 +49,10 @@ ul li:hover ul{
 
 li ul li{
     display: block;
+}
+
+.home a:hover{
+    background-color: cadetblue;
 }
 
 /* Main Panel Management */
