@@ -76,24 +76,32 @@ li ul li{
     width: 25px;
     height: 25px;
     margin-top: 50px;
+    position: relative;
+    left: 2%;
 }
 
 .pipeLogos{
     width: 25px;
     height: 25px;
     margin-top: 50px;
+    position: relative;
+    left: 2%;
 }
 
 .xLogo{
     width: 22px;
     height: 22px;
     margin-top: 50px;
+    position: relative;
+    left: 2%;
 }
 
 .searchLogo{
     width: 25px;
     height: 25px;
-    margin-top: 50px;
+    margin-top: 3.5em;
+    position: absolute;
+    right: 5%;
 }
 
 /* Links Management */
