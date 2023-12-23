@@ -1,0 +1,104 @@
+/* Panel Management Header, Footer */
+.subMiddlePanel{
+    height: 85px;
+    background-color: burlywood;
+}
+
+/* NavBar Panel Management */
+.navMiddlePanel{
+    height: 60px;
+    background-color: cadetblue;
+}
+
+/* NavBar Dropdown Menu */
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 999;
+    font-size: large;
+}
+
+li{
+    display: inline-block;
+}
+
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: red;
+}
+
+ul li ul{
+    background-color: white;
+    display: none;
+    position: absolute;
+    width: auto;
+}
+
+ul li:hover ul{
+    display: block;
+}
+
+li ul li{
+    display: block;
+}
+
+/* Main Panel Management */
+.middlePanel{
+    height: 1500px;
+    background-color: purple;
+}
+
+/* Body Management */
+.body{
+    background-color: gray;
+}
+
+/* TM Logo Management */
+.tmLogo{
+    width: 130px;
+    height: 75px;
+    margin-top: 5px;
+}
+
+/* Header Logos */
+.sMediaLogos{
+    width: 25px;
+    height: 25px;
+    margin-top: 50px;
+}
+
+.xLogo{
+    width: 22px;
+    height: 22px;
+    margin-top: 50px;
+}
+
+.searchLogo{
+    width: 25px;
+    height: 25px;
+    margin-top: 50px;
+}
+
+/* Links Management */
+.link{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+a:hover{
+    color: black;
+}
+
+a:link{
+    color: black;
+}
