@@ -1,81 +1,41 @@
-/* Panel Management Header, Footer */
+/* Body Management (We changed color here.) */
+.body{
+    background-color: gray;
+}
+
+/* Header, Footer Management (Color and Height) */
 .subMiddlePanel{
     height: 85px;
     background-color: burlywood;
 }
 
-/* NavBar Panel Management */
-.navMiddlePanel{
-    background-color: cadetblue;
-    text-align: center;
-}
-
-/* NavBar Dropdown Menu */
-
-ul{
-    list-style-type: none;
-    margin: 0;
-    overflow: hidden;
-    z-index: 999;
-    font-size: large;
-}
-
-li{
-    display: inline-block;
-}
-
-li a{
-    display: block;
+/* Links Management (Font type and color) */
+.link{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
-    text-align: left;
-    padding: 8px 8px;
-    text-decoration: none;
-    /* padding-right: 8px; */
 }
 
-li a:hover{
-    background-color: red;
+a:hover{
+    color: black;
 }
 
-ul li ul{
-    background-color: white;
-    display: none;
-    position: absolute;
-    text-align: left;
-    font-size: smaller;
+a:link{
+    color: black;
 }
 
-ul li:hover ul{
-    display: block;
-}
-
-li ul li{
-    display: block;
-}
-
-.home a:hover{
-    background-color: cadetblue;
-}
-
-/* Main Panel Management */
+/* Main (Content) Panel Management */
 .middlePanel{
     height: 1500px;
     background-color: purple;
 }
 
-/* Body Management */
-.body{
-    background-color: gray;
-}
-
-/* TM Logo Management */
+/* Header Logos  */
 .tmLogo{
     width: 130px;
     height: 75px;
     margin-top: 5px;
 }
 
-/* Header Logos */
 .sMediaLogos{
     width: 25px;
     height: 25px;
@@ -108,16 +68,65 @@ li ul li{
     right: 5%;
 }
 
-/* Links Management */
-.link{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
+/* Navigation Panel Management */
+nav{
+    margin: 0;
+    width: auto;
+    height: auto;
+    display: inline-block; 
+    z-index: 999;   
+    text-align: center;
+    background-color: cadetblue;
 }
 
-a:hover{
-    color: black;
+/* Navigation Panel Menu - Start */
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-a:link{
-    color: black;
+nav ul li{
+    position: relative;
+    display: inline-block;
+    text-align: left;
 }
+
+nav ul li a{
+    padding: 10px;
+    display: inline-block;
+    color: yellow;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    opacity: 0.5;
+}
+/* Navigation Panel Menu - End */
+
+/* Navigation Panel Dropdown Menu - Start */
+nav ul li ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: blueviolet;
+}
+
+nav ul li ul li{
+    width: 100%;
+    border-bottom: 1px saddlebrown;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+.dropdownWindow{
+    z-index: 999;
+}
+
+/* Nagivation Dropdown Menu Sign */
+li > a:after {content: ' »'; }
+
+li > a:only-child::after {content: '';}
+/* Navigation Panel Dropdown Menu - End */
