@@ -45,7 +45,7 @@
 .dot-container {
     text-align: center;
     padding: 20px;
-    background-color: #333; /* Nokta satırının arka plan rengini ayarlayın */
+    background-color: #CFCFCF; /* Nokta satırının arka plan rengini ayarlayın */
 }
 
 .dot {
