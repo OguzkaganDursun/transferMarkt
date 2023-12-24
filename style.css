@@ -146,4 +146,12 @@ li > a:only-child::after {content: '';}
 .leagueTablesText{
     text-align: center;
 }
+
+.tableBorder{
+    border-color: #eeeeee;
+}
+
+.leagueText{
+    font-weight: 600;
+}
 /* League Tables Management - End */
