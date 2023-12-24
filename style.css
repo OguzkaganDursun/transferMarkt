@@ -146,5 +146,4 @@ li > a:only-child::after {content: '';}
 .leagueTablesText{
     text-align: center;
 }
-
 /* League Tables Management - End */
