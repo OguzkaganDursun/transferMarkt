@@ -110,7 +110,7 @@ nav ul li a{
 nav ul li a:hover{
     opacity: 0.5;
     border-radius: 15px 15px 15px 15px;
-    background-color: bisque;
+    background-color: #CFCFCF;
     
 }
 /* Navigation Panel Menu - End */
@@ -124,7 +124,7 @@ nav ul li ul{
     border-radius: 15px 15px 15px 15px;
     border-block-end: solid;
     border-block-start: solid;
-    border-block-color: yellow;
+    border-block-color: #CFCFCF;
     writing-mode: horizontal-tb;
 }
 
