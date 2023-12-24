@@ -24,7 +24,13 @@ a:link{
 }
 
 /* Main (Content) Panel Management */
-.middlePanel{
+.indexMiddlePanel{
+    height: 3000px;
+    background-color: #CFCFCF;
+}
+
+/* Middle Panel Management (Other Pages) */
+.otherMiddlePanel{
     height: 1500px;
     background-color: #CFCFCF;
 }
@@ -135,3 +141,10 @@ li > a:after {content: ' »'; }
 
 li > a:only-child::after {content: '';}
 /* Navigation Panel Dropdown Menu - End */
+
+/* League Tables Management - Start */
+.leagueTablesText{
+    text-align: center;
+}
+
+/* League Tables Management - End */
