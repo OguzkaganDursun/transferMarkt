@@ -1,0 +1,66 @@
+/* Temel Stil */
+#slideshow-container {
+    position: relative;
+    max-width: none;
+    width: 100%;
+}
+
+/* Slayt İçeriği */
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+/* Buton Stilleri */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.prev:focus, .next:focus {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Galeri Butonları */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Nokta satırının arka plan rengini ayarlayın */
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot:hover {
+    background-color: #717171;
+}
+
+.active {
+    background-color: #717171;
+}
