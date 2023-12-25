@@ -150,6 +150,12 @@ li > a:only-child::after {content: '';}
 }
 /* League Tables Management - End */
 
+/* News Table Border */
+.newsTable{
+    border-width: 2px;
+    border-color: #1A3151;
+}
+
 /* News Headline */
 .newsHeadline
 {
