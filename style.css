@@ -23,15 +23,11 @@ a:link{
     color: black;
 }
 
-/* Main (Content) Panel Management */
-.indexMiddlePanel{
+/* Panel Management */
+.middlePanel{
     background-color: #CFCFCF;
 }
 
-/* Middle Panel Management (Other Pages) */
-.otherMiddlePanel{
-    background-color: #CFCFCF;
-}
 
 /* Header Logos  */
 .tmLogo{
