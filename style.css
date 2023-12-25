@@ -31,7 +31,6 @@ a:link{
 
 /* Middle Panel Management (Other Pages) */
 .otherMiddlePanel{
-    height: 1500px;
     background-color: #CFCFCF;
 }
 
@@ -155,3 +154,17 @@ li > a:only-child::after {content: '';}
     font-weight: 600;
 }
 /* League Tables Management - End */
+
+/* News Headline */
+.newsHeadline
+{
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    color: white;
+    background-color: #1A3151;
+    padding-top: 20px;
+    padding-bottom:20px;
+}
