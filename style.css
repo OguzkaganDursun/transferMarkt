@@ -169,3 +169,16 @@ li > a:only-child::after {content: '';}
     padding-top: 20px;
     padding-bottom:20px;
 }
+
+/* Register Headline */
+
+.registerHeadline
+{
+    font-weight: bold;
+    margin-top: 20px; 
+    color: white;
+    background-color: #1A3151;
+    padding-top: 10px;
+    padding-bottom:10px;
+    padding-left: 10px;
+}
