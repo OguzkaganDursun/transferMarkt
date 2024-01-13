@@ -97,3 +97,10 @@ function openCentralPopup() {
         centralPopup.style.display = 'block';
     }
 }
+
+function rate(stars) {
+    const thankYouMessage = document.getElementById('thankYouMessage');
+    if (thankYouMessage) {
+        thankYouMessage.style.display = 'block';
+    }
+}

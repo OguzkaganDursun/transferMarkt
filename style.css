@@ -246,3 +246,17 @@ li > a:only-child::after {content: '';}
     background: none;
     border: none;
 }
+
+#ratingStars {
+    cursor: pointer;
+}
+
+#ratingStars span {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+#thankYouMessage {
+    color: green;
+    font-weight: bold;
+}
