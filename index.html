@@ -148,18 +148,7 @@
                         </div>
                     </div>
                 </article>
-                <!-- Slides Panel - End -->
-
-                <!-- Pop Up - Start -->
-                <div id="leftPopup" class="popup hidden">
-                    Rate Us
-                </div>
-                <div id="rightPopup" class="popup hidden">
-                    Rate Us
-                </div>
-                
-                <script src="script.js"></script>
-                <!-- Pop Up - End -->
+                <!-- Slides Panel - End -->      
 
                 <!-- League Tables - Start -->
                 <article class="row">
@@ -1268,6 +1257,23 @@
         </section>
         <!-- Article - End -->
     <!-- Content - End -->
+
+    <!-- Pop Up - Start -->
+    <div id="leftPopup" class="popup">
+        <button class="openCentralButton" onclick="openCentralPopup()"><b>Rate Us</b></button>
+        <button class="closeButton" onclick="closePopup('leftPopup')">X</button>
+    </div>
+    <div id="rightPopup" class="popup">  
+        <button class="openCentralButton" onclick="openCentralPopup()"><b>Rate Us</b></button>
+        <button class="closeButton" onclick="closePopup('rightPopup')">X</button>
+    </div>
+    <div id="centralPopup" class="popup_central">
+        Orta Pop-up İçeriği
+        <button class="closeButton" onclick="closeAllPopups()">X</button>
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- Pop Up - End -->    
 
     <!-- Footer - Start -->        
     <footer class="row">

@@ -47,7 +47,7 @@ var slideInterval = setInterval(function () {
     plusSlides(1);
 }, 4000);
 
-// Popup Settings
+// Pop Up Settings
 document.addEventListener('DOMContentLoaded', function () {
     setTimeout(function () {
         showPopup('leftPopup');
@@ -58,6 +58,42 @@ document.addEventListener('DOMContentLoaded', function () {
         const popup = document.getElementById(popupId);
         if (popup) {
             popup.style.display = 'block';
+            // Kapatma butonunu seç
+            const closeButton = popup.querySelector('.closeButton');
+            if (closeButton) {
+                // Kapatma butonuna tıklandığında tüm pop-up'ları kapat
+                closeButton.addEventListener('click', function () {
+                    closeAllPopups();
+                });
+            }
+
+            // İçindeki butona tıklandığında orta pop-up'ı aç
+            const innerButton = popup.querySelector('.innerButton');
+            if (innerButton) {
+                innerButton.addEventListener('click', function () {
+                    openCentralPopup();
+                });
+            }
         }
     }
 });
+
+function closeAllPopups() {
+    closePopup('leftPopup');
+    closePopup('rightPopup');
+    closePopup('centralPopup');
+}
+
+function closePopup(popupId) {
+    const popup = document.getElementById(popupId);
+    if (popup) {
+        popup.style.display = 'none';
+    }
+}
+
+function openCentralPopup() {
+    const centralPopup = document.getElementById('centralPopup');
+    if (centralPopup) {
+        centralPopup.style.display = 'block';
+    }
+}
