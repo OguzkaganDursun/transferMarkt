@@ -214,6 +214,7 @@ li > a:only-child::after {content: '';}
     top: 50%;
     left: 25%;
     width: 50%;
+    height: 15%;
     padding: 20px;
     transform: translateY(-50%);
     background-color: #C0C0C0;
