@@ -46,3 +46,18 @@ function showSlides(n) {
 var slideInterval = setInterval(function () {
     plusSlides(1);
 }, 4000);
+
+// Popup Settings
+document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(function () {
+        showPopup('leftPopup');
+        showPopup('rightPopup');
+    }, 3000);
+
+    function showPopup(popupId) {
+        const popup = document.getElementById(popupId);
+        if (popup) {
+            popup.style.display = 'block';
+        }
+    }
+});

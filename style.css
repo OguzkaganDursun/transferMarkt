@@ -196,3 +196,23 @@ li > a:only-child::after {content: '';}
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
 }
+
+/* Pop Up Settings */
+.popup {
+    position: fixed;
+    top: 50%;
+    width: 200px;
+    padding: 20px;
+    transform: translateY(-50%);
+    background-color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#leftPopup {
+    left: 9%;
+}
+
+#rightPopup {
+    right: 9%;
+}
