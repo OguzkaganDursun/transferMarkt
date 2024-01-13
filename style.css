@@ -214,7 +214,7 @@ li > a:only-child::after {content: '';}
     top: 50%;
     left: 25%;
     width: 50%;
-    height: 15%;
+    height: 18%;
     padding: 20px;
     transform: translateY(-50%);
     background-color: #C0C0C0;
@@ -257,6 +257,6 @@ li > a:only-child::after {content: '';}
 }
 
 #thankYouMessage {
-    color: green;
+    color: #6C7B8B;
     font-weight: bold;
 }
