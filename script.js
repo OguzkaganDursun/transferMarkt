@@ -6,12 +6,11 @@ function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Show Slides Function
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
 
-// Slaytları gösterme fonksiyonu
+// Show Slides Function
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
