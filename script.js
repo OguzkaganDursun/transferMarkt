@@ -1,13 +1,12 @@
-// Slayt indeksi
+// Slide Index
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Slaytı ileri veya geri alma fonksiyonu
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-// Belirli bir slayta gitme fonksiyonu
+// Show Slides Function
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
@@ -18,7 +17,7 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
 
-    // Slayt indeksini sınırla
+    // Limit Slide Index
     if (n > slides.length) {
         slideIndex = 1;
     }
@@ -27,22 +26,22 @@ function showSlides(n) {
         slideIndex = slides.length;
     }
 
-    // Slaytları gizle
+    // Hide Slides
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
-    // Noktaların aktif durumunu kaldır
+    // Remove Active State Of Points
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
 
-    // Belirli slaytı göster
+    // Show Specific Slide
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
 
-// Otomatik Slayt Değişimi
+// Auto Slide Change
 var slideInterval = setInterval(function () {
     plusSlides(1);
 }, 4000);
@@ -58,16 +57,16 @@ document.addEventListener('DOMContentLoaded', function () {
         const popup = document.getElementById(popupId);
         if (popup) {
             popup.style.display = 'block';
-            // Kapatma butonunu seç
+            
             const closeButton = popup.querySelector('.closeButton');
             if (closeButton) {
-                // Kapatma butonuna tıklandığında tüm pop-up'ları kapat
+                // Close All Pop-Ups When Clicking The Close Button
                 closeButton.addEventListener('click', function () {
                     closeAllPopups();
                 });
             }
 
-            // İçindeki butona tıklandığında orta pop-up'ı aç
+            // Open Center Pop Up When Button Clicked Inside
             const innerButton = popup.querySelector('.innerButton');
             if (innerButton) {
                 innerButton.addEventListener('click', function () {
@@ -98,9 +97,45 @@ function openCentralPopup() {
     }
 }
 
-function rate(stars) {
-    const thankYouMessage = document.getElementById('thankYouMessage');
-    if (thankYouMessage) {
-        thankYouMessage.style.display = 'block';
+// Star Settings
+
+document.addEventListener("DOMContentLoaded", function () {
+    const stars = document.querySelectorAll('.star');
+    const congratulationsMessage = document.getElementById('congratulations');
+
+    stars.forEach(function(star) {
+      star.addEventListener('mouseover', function() {
+        highlightStars(this.dataset.rating);
+      });
+
+      star.addEventListener('mouseout', function() {
+        resetStars();
+      });
+      star.addEventListener('click', function() {
+        thankYouMessage (this.dataset.rating);
+      });
+    });
+
+    function highlightStars(rating) {
+      stars.forEach(function(star) {
+        if (star.dataset.rating <= rating) {
+          star.classList.add('rated');
+        }
+      });
     }
-}
+
+    function resetStars() {
+      stars.forEach(function(star) {
+        star.classList.remove('rated');
+      });
+    }
+
+    function thankYouMessage(rating)
+     {
+        const thankYouMessage = document.getElementById('thankYouMessage');
+        if (thankYouMessage) {
+            thankYouMessage.style.display = 'block';
+        }
+    }
+
+  });

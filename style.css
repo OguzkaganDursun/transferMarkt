@@ -247,14 +247,18 @@ li > a:only-child::after {content: '';}
     border: none;
 }
 
-#ratingStars {
-    cursor: pointer;
-}
-
-#ratingStars span {
+.rating {
     font-size: 24px;
-    margin-right: 5px;
-}
+  }
+
+.star {
+    color: grey;
+    cursor: pointer;
+  }
+
+.rated {
+    color: gold;
+  }
 
 #thankYouMessage {
     color: #6C7B8B;
