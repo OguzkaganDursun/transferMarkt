@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" href="slideMenu.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="images/logos/transfermarkt_favicon.png" type="transfermarkt_favicon"/>
+    <title>Bundesliga | OD</title>
+</head>
+
+<body class="container body">
+    <!-- Header - Start -->
+    <header class="row">
+        <div class="col subMiddlePanel">
+            <div class="row">
+
+                <div class="col">
+                    <a href="index.html" style="text-decoration: none;">
+                        <img src="images/logos/tmLogo.png" alt="tmLogo" class="tmLogo">
+                    </a>
+
+                    <a href="https://www.facebook.com/transfermarkt.global/" style="text-decoration: none;" target="_blank">
+                        <img src="images/logos/facebook.png" alt="facebook" class="sMediaLogos">
+                    </a>
+
+                    <img src="images/logos/pipeIcon.png" alt="pipeIcon" class="pipeLogos">
+
+                    <a href="https://twitter.com/TMuk_news" style="text-decoration: none;" target="_blank">
+                        <img src="images/logos/twitter.png" alt="twitter" class="xLogo">
+                    </a>
+
+                    <img src="images/logos/pipeIcon.png" alt="pipeIcon" class="pipeLogos">
+
+                    <a href="https://www.instagram.com/transfermarkt_official" target="_blank">
+                        <img src="images/logos/instagram.png" alt="instagram" class="sMediaLogos">
+                    </a>
+                    
+                    <!-- Web Api - Start -->
+                    <span id="clock">Loading...</span>
+
+                    <script src="live_time_api.js"></script>
+                    <!-- Web Api - End -->
+
+                    <a href="coming_soon.html">
+                        <img src="images/logos/search.png" alt="search" class="searchLogo">
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+</header>
+    <!-- Header - End -->
+
+    <!-- Navbar - Start -->
+    <nav class="row">
+        <div class="col">
+            <ul>
+                <li class="home">
+                    <a href="index.html">
+                        <img src="images/logos/home45.png" alt="Home Page" style="margin-bottom: 5px;">
+                    </a>
+                </li>
+
+                <li><a href="news.html"><b>NEWS</b></a></li>
+
+                <li><b style="color: black;">TRANSFERS & RUMOURS »</b>
+                    <ul class="dropdownWindow">
+                        <li><a href="coming_soon.html"><b>LASTEST TRANSFERS</b></a></li>
+                        <li><a href="coming_soon.html"><b>TOP TRANSFERS</b></a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="coming_soon.html"><b>MARKET VALUES</b></a></li>
+                
+                <li><b style="color: black;">COMPETITIONS »</b>
+                    <ul class="dropdownWindow">
+                        <li><a href="premier_league.html"><b>PREMIER LEAGUE</b></a></li>
+                        <li><a href="coming_soon.html"><b>LA LIGA</b></a></li>
+                        <li><a href="coming_soon.html"><b>BUNDESLIGA</b></a></li>
+                        <li><a href="coming_soon.html"><b>SERIE A</b></a></li>
+                        <li><a href="coming_soon.html"><b>LIGUE 1</b></a></li>
+                        <li><a href="super_lig.html"><b>SUPER LIG</b></a></li>
+                    </ul>
+                </li>
+
+                <li><b style="color: black;">LOGIN »</b>
+                    <ul class="dropdownWindow">
+                        <li><input type="text" name="name" placeholder="Nickname" style="margin-top: 10px; font-style: oblique;"></li>
+                        <li style="padding-top: 1px;"><input type="text" name="surname" placeholder="Password" style="font-style: oblique;"></li>
+                        <li style="padding-top: 10px; margin-left: 7px;">
+                            <a href="coming_soon.html" style="position: relative; left: 90%; font-style: oblique;">
+                                Login
+                            </a>
+                        </li>  
+                        <br>                                                   
+                        <li style="padding-top: 1px;">
+                            <a href="register_form.html" style="position: relative; left: 30%; margin-bottom: 5px; font-style: oblique;">
+                                Register Now!
+                            </a> 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar - End -->
+
+    <!-- Content - Start -->
+        <!-- Article -  Start -->
+        <article class="row" style="background-color: #CFCFCF;">
+            <img src="images/leagues/bundesliga.jpg" alt="bundesliga" style="width: 100%;">
+        </article>
+                
+        <!-- Clubs - Bundesliga 23/24 - Start -->       
+        <article class="row" style="background-color: #CFCFCF;">      
+            <div class="col">
+                <br>  
+                <div style="background-color: #1A3151;">
+                    <p style="color: white; margin-bottom: 0px; margin-left: 6px;">CLUBS - BUNDESLIGA 23/24</p>
+                </div>                   
+                
+                <table class="tableBorder" frame="box" style="width: 100%;">                            
+                    <tr class="leagueText">
+                        <td style="width: 50px; text-align: right;"><b>Club</b></td>
+                        <td style="width: 50px;" class="leagueTablesText"></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>Squad</b></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>ø Age</b></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>Foreigners</b></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>ø Market Value</b></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>Total Market Value</b></td>                        
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>
+                            <img src="images/logos/clubs/germany/bayern_munih.png" alt="bayern_munih" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Bayern Munich</td>
+                        <td class="leagueTablesText">26</td>
+                        <td class="leagueTablesText">26.5</td>
+                        <td class="leagueTablesText">14</td>
+                        <td class="leagueTablesText">€36.31m</td>
+                        <td class="leagueTablesText">€943.95m</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/logos/clubs/germany/leverkusen.png" alt="leverkusen" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Bayer 04 Leverkusen</td>
+                        <td class="leagueTablesText">27</td>
+                        <td class="leagueTablesText">24.4</td>
+                        <td class="leagueTablesText">21</td>
+                        <td class="leagueTablesText">€20.84m</td>
+                        <td class="leagueTablesText">€562.55m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>
+                            <img src="images/logos/clubs/germany/leipzig.png" alt="leipzig" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>RB Leipzig</td>
+                        <td class="leagueTablesText">25</td>
+                        <td class="leagueTablesText">25.3</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">€19.58m</td>
+                        <td class="leagueTablesText">€489.60m</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/logos/clubs/germany/bor_dortmund.png" alt="bor_dortmund" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Borussia Dortmund</td>
+                        <td class="leagueTablesText">32</td>
+                        <td class="leagueTablesText">24.9</td>
+                        <td class="leagueTablesText">15</td>
+                        <td class="leagueTablesText">€15.26m</td>
+                        <td class="leagueTablesText">€488.40m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>
+                            <img src="images/logos/clubs/germany/wolfsburg.png" alt="wolfsburg" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>VFL Wolfsburg</td>
+                        <td class="leagueTablesText">28</td>
+                        <td class="leagueTablesText">24.5</td>
+                        <td class="leagueTablesText">19</td>
+                        <td class="leagueTablesText">€8.76m</td>
+                        <td class="leagueTablesText">€245.20m</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/logos/clubs/germany/frankfurt.png" alt="frankfurt" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Eintracht Frankfurt</td>
+                        <td class="leagueTablesText">29</td>
+                        <td class="leagueTablesText">25.4</td>
+                        <td class="leagueTablesText">21</td>
+                        <td class="leagueTablesText">€7.82m</td>
+                        <td class="leagueTablesText">€226.65m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>
+                            <img src="images/logos/clubs/germany/stuttgart.png" alt="stuttgart" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>VFB Stuttgart</td>
+                        <td class="leagueTablesText">28</td>
+                        <td class="leagueTablesText">23.7</td>
+                        <td class="leagueTablesText">11</td>
+                        <td class="leagueTablesText">€7.96m</td>
+                        <td class="leagueTablesText">€222.90m</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/logos/clubs/germany/monchengladbach.png" alt="monchengladbach" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Borussia Mönchengladbach</td>
+                        <td class="leagueTablesText">31</td>
+                        <td class="leagueTablesText">25.4</td>
+                        <td class="leagueTablesText">16</td>
+                        <td class="leagueTablesText">€6.55m</td>
+                        <td class="leagueTablesText">€202.93m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>
+                            <img src="images/logos/clubs/germany/freiburg.png" alt="freiburg" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>SC Freiburg</td>
+                        <td class="leagueTablesText">25</td>
+                        <td class="leagueTablesText">26.1</td>
+                        <td class="leagueTablesText">9</td>
+                        <td class="leagueTablesText">€7.07m</td>
+                        <td class="leagueTablesText">€176.70m</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/logos/clubs/germany/union_berlin.png" alt="union_berlin" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>1.FC Union Berlin</td>
+                        <td class="leagueTablesText">26</td>
+                        <td class="leagueTablesText">27.4</td>
+                        <td class="leagueTablesText">14</td>
+                        <td class="leagueTablesText">€6.12m</td>
+                        <td class="leagueTablesText">€159.15m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>
+                            <img src="images/logos/clubs/germany/hoffenheim.png" alt="hoffenheim" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>TSG 1899 Hoffenheim</td>
+                        <td class="leagueTablesText">29</td>
+                        <td class="leagueTablesText">25.5</td>
+                        <td class="leagueTablesText">13</td>
+                        <td class="leagueTablesText">€4.81m</td>
+                        <td class="leagueTablesText">€139.60m</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/logos/clubs/germany/augsburg.png" alt="augsburg" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>FC Augsburg</td>
+                        <td class="leagueTablesText">29</td>
+                        <td class="leagueTablesText">24.9</td>
+                        <td class="leagueTablesText">18</td>
+                        <td class="leagueTablesText">€3.99m</td>
+                        <td class="leagueTablesText">€115.65m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>
+                            <img src="images/logos/clubs/germany/mainz.png" alt="mainz" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>1.FSV Mainz 05</td>
+                        <td class="leagueTablesText">26</td>
+                        <td class="leagueTablesText">26.4</td>
+                        <td class="leagueTablesText">12</td>
+                        <td class="leagueTablesText">€4.03m</td>
+                        <td class="leagueTablesText">€104.65m</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/logos/clubs/germany/koln.png" alt="koln" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>1.FC Köln</td>
+                        <td class="leagueTablesText">31</td>
+                        <td class="leagueTablesText">25.0</td>
+                        <td class="leagueTablesText">7</td>
+                        <td class="leagueTablesText">€3.09m</td>
+                        <td class="leagueTablesText">€95.70m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>
+                            <img src="images/logos/clubs/germany/werder_bremen.png" alt="werder_bremen" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>SV Werder Bremen</td>
+                        <td class="leagueTablesText">24</td>
+                        <td class="leagueTablesText">26.5</td>
+                        <td class="leagueTablesText">10</td>
+                        <td class="leagueTablesText">€3.68m</td>
+                        <td class="leagueTablesText">€88.20m</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/logos/clubs/germany/bochum.png" alt="bochum" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>VFL Bochum</td>
+                        <td class="leagueTablesText">29</td>
+                        <td class="leagueTablesText">27.3</td>
+                        <td class="leagueTablesText">13</td>
+                        <td class="leagueTablesText">€1.97m</td>
+                        <td class="leagueTablesText">€57.20m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>
+                            <img src="images/logos/clubs/germany/heidenheim.png" alt="heidenheim" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>1.FC Heidenheim 1846</td>
+                        <td class="leagueTablesText">28</td>
+                        <td class="leagueTablesText">25.8</td>
+                        <td class="leagueTablesText">6</td>
+                        <td class="leagueTablesText">€1.76m</td>
+                        <td class="leagueTablesText">€49.25m</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="images/logos/clubs/germany/darmstadt.png" alt="darmstadt" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>SV Darmstadt 98</td>
+                        <td class="leagueTablesText">28</td>
+                        <td class="leagueTablesText">26.1</td>
+                        <td class="leagueTablesText">10</td>
+                        <td class="leagueTablesText">€1.38m</td>
+                        <td class="leagueTablesText">€38.75m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td></td>
+                        <td></td>
+                        <td class="leagueTablesText"><b>498</b></td>
+                        <td class="leagueTablesText"><b>26.2 Years</b></td>
+                        <td class="leagueTablesText"><b>244</b></td>
+                        <td class="leagueTablesText"><b>€8.84m</b></td>
+                        <td class="leagueTablesText"><b>€4.40bn</b></td>
+                    </tr>
+                </table>       
+
+                <div style=" background-color: #1A3151; text-align: right; padding-right: 7px;">
+                    <p style="color: #1A3151;"><br></p>
+                </div>
+
+            </div>
+        </article>
+        <!-- Clubs - Bundesliga 23/24 - End -->
+
+        <!-- Top Goalscorers And Most Valuable Players - Start -->
+        <article class="row" style="background-color: #CFCFCF;">
+            
+            <!-- Top Goalscorers - Start -->
+            <div class="col">  
+
+                <div style="background-color: #1A3151;">
+                    <p style="color: white; margin-bottom: 0px; margin-left: 6px;">TOP GOAL SCORERS</p>
+                </div>                   
+        
+                <table class="tableBorder" frame="box" style="width: 100%;">                            
+                    <tr class="leagueText">
+                        <td style="width: 50px;" class="leagueTablesText"><b>#</b></td>
+                        <td style="width: 50px;"><b>Player</b></td>
+                        <td style="width: 50px;" ></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>Position</b></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>Age</b></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>Club</b></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>Goals</b></td>                      
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td class="leagueTablesText">1</td>
+                        <td>
+                            <img src="images/faces/harry_kane.png" alt="harry_kane"  style="width: 50px; height: 60px;">
+                        </td>
+                        <td class="leagueTablesText">Harry Kane</td>
+                        <td class="leagueTablesText">CF</td>
+                        <td class="leagueTablesText">30</td>
+                        <td class="leagueTablesText">
+                            <img src="images/logos/clubs/germany/bayern_munih.png" alt="bayern_munih">
+                        </td>
+                        <td class="leagueTablesText">22</td>
+                    </tr>
+                    <tr>
+                        <td class="leagueTablesText">2</td>
+                        <td>
+                            <img src="images/faces/serhou_guirassy.png" alt="serhou_guirassy"  style="width: 50px; height: 60px;">
+                        </td>
+                        <td class="leagueTablesText">Serhou Guirassy</td>
+                        <td class="leagueTablesText">CF</td>
+                        <td class="leagueTablesText">27</td>
+                        <td class="leagueTablesText">
+                            <img src="images/logos/clubs/germany/stuttgart.png" alt="stuttgart">
+                        </td>
+                        <td class="leagueTablesText">17</td>
+                            </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td class="leagueTablesText">3</td>
+                        <td>
+                            <img src="images/faces/lois_openda.png" alt="lois_openda"  style="width: 50px; height: 60px;">
+                        </td>
+                        <td class="leagueTablesText">Loïs Openda</td>
+                        <td class="leagueTablesText">CF</td>
+                        <td class="leagueTablesText">23</td>
+                        <td class="leagueTablesText">
+                            <img src="images/logos/clubs/germany/leipzig.png" alt="leipzig">
+                        </td>
+                        <td class="leagueTablesText">11</td>
+                    </tr>
+                    <tr>
+                        <td class="leagueTablesText">4</td>
+                        <td>
+                            <img src="images/faces/victor_boniface.png" alt="victor_boniface"  style="width: 50px; height: 60px;">
+                        </td>
+                        <td class="leagueTablesText">Victor Boniface</td>
+                        <td class="leagueTablesText">CF</td>
+                        <td class="leagueTablesText">22</td>
+                        <td class="leagueTablesText">
+                            <img src="images/logos/clubs/germany/leverkusen.png" alt="leverkusen">
+                        </td>
+                        <td class="leagueTablesText">10</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td class="leagueTablesText">5</td>
+                        <td>
+                            <img src="images/faces/jonas_wind.png" alt="jonas_wind"  style="width: 50px; height: 60px;">
+                        </td>
+                        <td class="leagueTablesText">Jonas Wind</td>
+                        <td class="leagueTablesText">CF</td>
+                        <td class="leagueTablesText">24</td>
+                        <td class="leagueTablesText">
+                            <img src="images/logos/clubs/germany/wolfsburg.png" alt="wolfsburg">
+                        </td>
+                        <td class="leagueTablesText">9</td>
+                    </tr>  
+                </table>
+                
+                <div style=" background-color: #1A3151; text-align: right; padding-right: 7px;">
+                    <p style="color: #1A3151;"><br></p>
+                </div>
+            </div>
+            <!-- Top Goalscorers - End -->
+
+            <!-- Most Valuable Players - Start -->
+            <div class="col">    
+                            
+                <div style="background-color: #1A3151;">
+                    <p style="color: white; margin-bottom: 0px; margin-left: 6px;">MOST VALUABLE PLAYERS</p>
+                </div>                   
+                        
+                <table class="tableBorder" frame="box" style="width: 100%;">                            
+                    <tr class="leagueText">
+                        <td style="width: 50px;" class="leagueTablesText"><b>#</b></td>
+                        <td style="width: 50px;"><b>Player</b></td>
+                        <td style="width: 50px;"></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>Position</b></td>
+                        <td style="width: 50px;" class="leagueTablesText"><b>Club</b></td>
+                        <td style="width: 150px;" class="leagueTablesText"><b>Market Values</b></td>                  
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td class="leagueTablesText">1</td>
+                        <td>
+                            <img src="images/faces/jamal_musiala.png" alt="jamal_musiala" style="width: 50px; height: 60px;">
+                        </td>
+                        <td class="leagueTablesText">Jamal Musiala</td>
+                        <td class="leagueTablesText">CAM</td>
+                        <td class="leagueTablesText">
+                            <img src="images/logos/clubs/germany/bayern_munih.png" alt="bayern_munih">
+                        </td>                        
+                        <td class="leagueTablesText">€110.00m</td>
+                    </tr>
+                    <tr>
+                        <td class="leagueTablesText">2</td>
+                        <td>
+                            <img src="images/faces/harry_kane.png" alt="harry_kane" style="width: 50px; height: 60px;">
+                        </td>
+                        <td class="leagueTablesText">Harry Kane</td>
+                        <td class="leagueTablesText">CF</td>
+                        <td class="leagueTablesText">
+                            <img src="images/logos/clubs/germany/bayern_munih.png" alt="bayern_munih">
+                        </td>                        
+                        <td class="leagueTablesText">€110.00m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td class="leagueTablesText">3</td>
+                        <td>
+                            <img src="images/faces/florian_wirtz.png" alt="florian_wirtz" style="width: 50px; height: 60px;">
+                        </td>
+                        <td class="leagueTablesText">Florian Wirtz</td>
+                        <td class="leagueTablesText">CAM</td>
+                        <td class="leagueTablesText">
+                            <img src="images/logos/clubs/germany/leverkusen.png" alt="leverkusen">
+                        </td>                        
+                        <td class="leagueTablesText">€100.00m</td>
+                    </tr>
+                    <tr>
+                        <td class="leagueTablesText">4</td>
+                        <td>
+                            <img src="images/faces/leroy_sane.png" alt="leroy_sane" style="width: 50px; height: 60px;">
+                        </td>
+                        <td class="leagueTablesText">Leroy Sane</td>
+                        <td class="leagueTablesText">RW</td>
+                        <td class="leagueTablesText">
+                            <img src="images/logos/clubs/germany/bayern_munih.png" alt="bayern_munih">
+                        </td>                        
+                        <td class="leagueTablesText">€80.00m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td class="leagueTablesText">5</td>
+                        <td>
+                            <img src="images/faces/joshua_kimmich.png" alt="joshua_kimmich"  style="width: 50px; height: 60px;">
+                        </td>
+                        <td class="leagueTablesText">Joshua Kimmich</td>
+                        <td class="leagueTablesText">CDM</td>
+                        <td class="leagueTablesText">
+                            <img src="images/logos/clubs/germany/bayern_munih.png" alt="bayern_munih">
+                        </td>                        
+                        <td class="leagueTablesText">€75.00m</td>
+                        </tr>  
+                </table>
+                
+                <div style=" background-color: #1A3151; text-align: right; padding-right: 7px;">
+                    <p style="color: #1A3151;"><br></p>
+                </div>
+            </div>
+            <!-- Most Valuable Players - End -->
+
+        </article>
+        <!-- Top Goalscorers And Most Valuable Players - End -->
+        
+        <!-- Bundesliga Stands - Start -->
+        <article class="row" style="background-color: #CFCFCF;">
+            
+            <div class="col">
+                <br>
+ 
+                <div style="background-color: #1A3151;">
+                    <p style="color: white; margin-bottom: 0px; margin-left: 6px;">TABLE</p>
+                </div>                   
+                
+                <table class="tableBorder" frame="box" style="width: 100%;">                            
+                    <tr class="leagueText">
+                        <td style="width: 30px;">#</td>
+                        <td style="width: 40px;"></td>
+                        <td style="width: 320px;">club</td>
+                        <td style="width: 50px;" class="leagueTablesText">Matches</td>
+                        <td style="width: 50px;" class="leagueTablesText">Wins</td>
+                        <td style="width: 50px;" class="leagueTablesText">Draws</td>
+                        <td style="width: 50px;" class="leagueTablesText">Losses</td>
+                        <td style="width: 50px;" class="leagueTablesText">Goals</td>
+                        <td style="width: 50px;" class="leagueTablesText">+/-</td>
+                        <td style="width: 50px;" class="leagueTablesText">Pts</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="background-color: #afd179;">1</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/leverkusen.png" alt="leverkusen" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Bayern Leverkusen</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">14</td>
+                        <td class="leagueTablesText">3</td>
+                        <td class="leagueTablesText">0</td>
+                        <td class="leagueTablesText">47:12</td>
+                        <td class="leagueTablesText">35</td>
+                        <td class="leagueTablesText">45</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #c3dc9a;">2.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/bayern_munih.png" alt="bayern_munih" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Bayern Munich</td>
+                        <td class="leagueTablesText">16</td>
+                        <td class="leagueTablesText">13</td>
+                        <td class="leagueTablesText">2</td>
+                        <td class="leagueTablesText">1</td>
+                        <td class="leagueTablesText">52:15</td>
+                        <td class="leagueTablesText">37</td>
+                        <td class="leagueTablesText">41</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="background-color: #c3dc9a;">3.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/stuttgart.png" alt="stuttgart" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>VFB Stuttgart</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">11</td>
+                        <td class="leagueTablesText">1</td>
+                        <td class="leagueTablesText">5</td>
+                        <td class="leagueTablesText">38:22</td>
+                        <td class="leagueTablesText">16</td>
+                        <td class="leagueTablesText">34</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #c3dc9a;">4.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/leipzig.png" alt="leipzig" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>RB Leipzig</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">10</td>
+                        <td class="leagueTablesText">3</td>
+                        <td class="leagueTablesText">4</td>
+                        <td class="leagueTablesText">38:18</td>
+                        <td class="leagueTablesText">20</td>
+                        <td class="leagueTablesText">33</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="background-color: #bdd9ef">5.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/bor_dortmund.png" alt="bor_dortmund" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Borussia Dortmund</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">8</td>
+                        <td class="leagueTablesText">6</td>
+                        <td class="leagueTablesText">3</td>
+                        <td class="leagueTablesText">33:25</td>
+                        <td class="leagueTablesText">8</td>
+                        <td class="leagueTablesText">30</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #a5cce9;">6.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/frankfurt.png" alt="frankfurt" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Eintracht Frankfurt</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">7</td>
+                        <td class="leagueTablesText">6</td>
+                        <td class="leagueTablesText">4</td>
+                        <td class="leagueTablesText">27:20</td>
+                        <td class="leagueTablesText">7</td>
+                        <td class="leagueTablesText">27</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>7.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/freiburg.png" alt="freiburg" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>SC Freiburg</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">7</td>
+                        <td class="leagueTablesText">4</td>
+                        <td class="leagueTablesText">6</td>
+                        <td class="leagueTablesText">21:26</td>
+                        <td class="leagueTablesText">-5</td>
+                        <td class="leagueTablesText">25</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/hoffenheim.png" alt="hoffenheim" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>TSG Hoffenheim</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">7</td>
+                        <td class="leagueTablesText">3</td>
+                        <td class="leagueTablesText">7</td>
+                        <td class="leagueTablesText">32:33</td>
+                        <td class="leagueTablesText">-1</td>
+                        <td class="leagueTablesText">24</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>9.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/heidenheim.png" alt="heidenheim" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Heidenheim</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">6</td>
+                        <td class="leagueTablesText">3</td>
+                        <td class="leagueTablesText">8</td>
+                        <td class="leagueTablesText">26:33</td>
+                        <td class="leagueTablesText">-7</td>
+                        <td class="leagueTablesText">21</td>
+                    </tr>
+                    <tr>
+                        <td>10.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/monchengladbach.png" alt="monchengladbach" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Borussia Mönchengladbach</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">5</td>
+                        <td class="leagueTablesText">5</td>
+                        <td class="leagueTablesText">7</td>
+                        <td class="leagueTablesText">34:36</td>
+                        <td class="leagueTablesText">-2</td>
+                        <td class="leagueTablesText">20</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>11</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/wolfsburg.png" alt="wolfsburg" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>VFL Wolfsburg</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">6</td>
+                        <td class="leagueTablesText">2</td>
+                        <td class="leagueTablesText">9</td>
+                        <td class="leagueTablesText">21:28</td>
+                        <td class="leagueTablesText">-7</td>
+                        <td class="leagueTablesText">20</td>
+                    </tr>
+                    <tr>
+                        <td>12.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/augsburg.png" alt="augsburg" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>FC Augsburg</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">4</td>
+                        <td class="leagueTablesText">6</td>
+                        <td class="leagueTablesText">7</td>
+                        <td class="leagueTablesText">24:32</td>
+                        <td class="leagueTablesText">-8</td>
+                        <td class="leagueTablesText">18</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>13.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/werder_bremen.png" alt="werder_bremen" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Werder Bremen</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">4</td>
+                        <td class="leagueTablesText">5</td>
+                        <td class="leagueTablesText">8</td>
+                        <td class="leagueTablesText">24:31</td>
+                        <td class="leagueTablesText">-7</td>
+                        <td class="leagueTablesText">17</td>
+                    </tr>
+                    <tr>
+                        <td>14.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/bochum.png" alt="bochum" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>VFL Bochum</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">3</td>
+                        <td class="leagueTablesText">8</td>
+                        <td class="leagueTablesText">6</td>
+                        <td class="leagueTablesText">19:34</td>
+                        <td class="leagueTablesText">-15</td>
+                        <td class="leagueTablesText">17</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td>15.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/union_berlin.png" alt="union_berlin" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Union Berlin</td>
+                        <td class="leagueTablesText">16</td>
+                        <td class="leagueTablesText">4</td>
+                        <td class="leagueTablesText">2</td>
+                        <td class="leagueTablesText">10</td>
+                        <td class="leagueTablesText">17:31</td>
+                        <td class="leagueTablesText">-14</td>
+                        <td class="leagueTablesText">14</td>
+                    </tr>                    
+                    <tr>
+                        <td style="background-color: #f8cfcd;">16.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/mainz.png" alt="mainz" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>1.FSV Mainz 05</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">1</td>
+                        <td class="leagueTablesText">8</td>
+                        <td class="leagueTablesText">8</td>
+                        <td class="leagueTablesText">14:29</td>
+                        <td class="leagueTablesText">-15</td>
+                        <td class="leagueTablesText">11</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="background-color: #f8a7a3;">17.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/koln.png" alt="koln" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>1.FC Köln</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">2</td>
+                        <td class="leagueTablesText">5</td>
+                        <td class="leagueTablesText">10</td>
+                        <td class="leagueTablesText">11:29</td>
+                        <td class="leagueTablesText">-18</td>
+                        <td class="leagueTablesText">11</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: #f8a7a3;">18.</td>
+                        <td>
+                            <img src="images/logos/clubs/germany/darmstadt.png" alt="darmstadt" style="margin-bottom: 2px; margin-left: 15px;">
+                        </td>
+                        <td>Darmstadt 98</td>
+                        <td class="leagueTablesText">17</td>
+                        <td class="leagueTablesText">2</td>
+                        <td class="leagueTablesText">4</td>
+                        <td class="leagueTablesText">11</td>
+                        <td class="leagueTablesText">20:44</td>
+                        <td class="leagueTablesText">-24</td>
+                        <td class="leagueTablesText">10</td>
+                    </tr>
+                </table>
+
+                <div style=" background-color: #1A3151; text-align: right; padding-right: 7px;">
+                    <p style="color: #1A3151;"><br></p>
+                </div>
+
+            </div>
+        </article>
+        <!-- Bundesliga Stands - End -->
+
+        <!-- League Qualifiers & Relegated Explanation - Start -->
+        <div class="row" style="background-color: #CFCFCF;">
+            <div class="col">
+                <p style="color: black; margin-bottom: 0px; background-color: #afd179; text-align: center; font-style: oblique;">
+                    Champions & UEFA Champions League
+                </p> 
+            </div>
+            <div class="col">
+                <p style="color: black; margin-bottom: 0px; background-color: #c3dc9a; text-align: center; font-style: oblique;">
+                    UEFA Champions League
+                </p> 
+            </div>
+            <div class="col">
+                <p style="color: black; margin-bottom: 0px; background-color: #bdd9ef; text-align: center; font-style: oblique;">
+                    UEFA Europa League
+                </p> 
+            </div>            
+        </div>
+
+        <div class="row" style="background-color: #CFCFCF;"><br></div>
+
+        <div class="row" style="background-color: #CFCFCF;">
+            <div class="col">
+                <p style="color: black; margin-bottom: 0px; background-color: #a5cce9; text-align: center; font-style: oblique;">
+                    UEFA Europa Conference League Qualifikation
+                </p> 
+            </div>
+            <div class="col">
+                <p style="color: black; margin-bottom: 0px; background-color: #f8cfcd; text-align: center; font-style: oblique;">
+                    Playoffs (relegation)
+                </p> 
+            </div> 
+            <div class="col">
+                <p style="color: black; margin-bottom: 0px; background-color: #f8a7a3; text-align: center; font-style: oblique;">
+                    Relegated
+                </p> 
+            </div>            
+        </div>
+
+        <div class="row" style="background-color: #CFCFCF;"><br></div>
+        <!-- League Qualifiers & Relegated Explanation - End -->
+
+        <!-- Article - End -->
+    <!-- Content - End -->
+
+    <!-- Footer - Start -->        
+    <footer class="row">
+        <div class="col subMiddlePanel">
+            <div class="row">
+
+                <div class="col-3">
+                    <a href="index.html">
+                        <img src="images/logos/tm_footer_logo.png" alt="tm_footer_logo" style="margin: 8%;">
+                    </a>
+                </div>
+
+                <div class="col-9" style="margin-top: 2.5%; flex: auto;">
+                   <a href="https://www.transfermarkt.com/intern/impressum" target="_blank" class="link">Legal Notice</a>
+                   <img src="images/logos/pipeIcon.png" alt="pipeIcon" style="height: 40px; margin-top: -4px;">
+                   
+                   <a href="https://www.transfermarkt.com/intern/web/datenschutz" target="_blank" class="link">Data Protection</a>
+                   <img src="images/logos/pipeIcon.png" alt="pipeIcon" style="height: 40px; margin-top: -4px;">
+
+                   <a href="https://www.transfermarkt.com/intern/anb" target="_blank" class="link">General Conditions Of Use</a>
+                   <img src="images/logos/pipeIcon.png" alt="pipeIcon" style="height: 40px; margin-top: -4px;">
+
+                   <a href="https://www.transfermarkt.com/intern/tmteam" target="_blank" class="link">TM - Team</a>
+                   <img src="images/logos/pipeIcon.png" alt="pipeIcon" style="height: 40px; margin-top: -4px;">
+
+                   <a href="https://www.transfermarkt.com/intern/faq" target="_blank" class="link">FAQ</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>       
+    <!-- Footer - End -->
+</body>
+</html>
