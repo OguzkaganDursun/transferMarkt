@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" href="slideMenu.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" href="images/logos/transfermarkt_favicon.png" type="transfermarkt_favicon"/>
+    <title>Market Values| OD</title>
+</head>
+
+<body class="container body">
+    <!-- Header - Start -->
+    <header class="row">
+        <div class="col subMiddlePanel">
+            <div class="row">
+
+                <div class="col">
+                    <a href="index.html" style="text-decoration: none;">
+                        <img src="images/logos/tmLogo.png" alt="tmLogo" class="tmLogo">
+                    </a>
+
+                    <a href="https://www.facebook.com/transfermarkt.global/" style="text-decoration: none;" target="_blank">
+                        <img src="images/logos/facebook.png" alt="facebook" class="sMediaLogos">
+                    </a>
+
+                    <img src="images/logos/pipeIcon.png" alt="pipeIcon" class="pipeLogos">
+
+                    <a href="https://twitter.com/TMuk_news" style="text-decoration: none;" target="_blank">
+                        <img src="images/logos/twitter.png" alt="twitter" class="xLogo">
+                    </a>
+
+                    <img src="images/logos/pipeIcon.png" alt="pipeIcon" class="pipeLogos">
+
+                    <a href="https://www.instagram.com/transfermarkt_official" target="_blank">
+                        <img src="images/logos/instagram.png" alt="instagram" class="sMediaLogos">
+                    </a>
+                    
+                    <!-- Web Api - Start -->
+                    <span id="clock">Loading...</span>
+
+                    <script src="live_time_api.js"></script>
+                    <!-- Web Api - End -->
+
+                    <a href="coming_soon.html">
+                        <img src="images/logos/search.png" alt="search" class="searchLogo">
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+</header>
+    <!-- Header - End -->
+
+    <!-- Navbar - Start -->
+    <nav class="row">
+        <div class="col">
+            <ul>
+                <li class="home">
+                    <a href="index.html">
+                        <img src="images/logos/home45.png" alt="Home Page" style="margin-bottom: 5px;">
+                    </a>
+                </li>
+
+                <li><a href="news.html"><b>NEWS</b></a></li>
+
+                <li><b style="color: black;">TRANSFERS & RUMOURS »</b>
+                    <ul class="dropdownWindow">
+                        <li><a href="latest_transfers.html"><b>LATEST TRANSFERS</b></a></li>
+                        <li><a href="top_transfers.html"><b>TOP TRANSFERS</b></a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="market_values.html"><b>MARKET VALUES</b></a></li>
+                
+                <li><b style="color: black;">COMPETITIONS »</b>
+                    <ul class="dropdownWindow">
+                        <li><a href="premier_league.html"><b>PREMIER LEAGUE</b></a></li>
+                        <li><a href="la_liga.html"><b>LA LIGA</b></a></li>
+                        <li><a href="bundesliga.html"><b>BUNDESLIGA</b></a></li>
+                        <li><a href="serie_a.html"><b>SERIE A</b></a></li>
+                        <li><a href="ligue_one.html"><b>LIGUE 1</b></a></li>
+                        <li><a href="super_lig.html"><b>SUPER LIG</b></a></li>
+                    </ul>
+                </li>
+
+                <li><b style="color: black;">LOGIN »</b>
+                    <ul class="dropdownWindow">
+                        <li><input type="text" name="name" placeholder="Nickname" style="margin-top: 10px; font-style: oblique;"></li>
+                        <li style="padding-top: 1px;"><input type="text" name="surname" placeholder="Password" style="font-style: oblique;"></li>
+                        <li style="padding-top: 10px; margin-left: 7px;">
+                            <a href="coming_soon.html" style="position: relative; left: 90%; font-style: oblique;">
+                                Login
+                            </a>
+                        </li>  
+                        <br>                                                   
+                        <li style="padding-top: 1px;">
+                            <a href="register_form.html" style="position: relative; left: 30%; margin-bottom: 5px; font-style: oblique;">
+                                Register Now!
+                            </a> 
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar - End -->
+
+    <!-- Content - Start -->
+        <!-- Article -  Start -->          
+        <!-- BIGGEST INCREASES IN MARKET VALUE - Start -->       
+        <article class="row" style="background-color: #CFCFCF;">      
+            <div class="col">
+                <br>  
+                <div style="background-color: #1A3151;">
+                    <p style="color: white; margin-bottom: 0px; margin-left: 6px;">BIGGEST INCREASES IN MARKET VALUE</p>
+                </div>                   
+                <table class="tableBorder" frame="box" style="width: 100%;">   
+                    <tr>
+                        <td style="width:3%; padding-left:10px;"><b>#</b></td>
+                        <td><b>Player</b></td>
+                        <td></td>
+                        <td></td>
+                        <td style="text-align: center;"><b>Position</b></td>
+                        <td style="text-align: center;"><b>Clubs</b></td>
+                        <td></td>
+                        <td style="text-align: center;"><b>Age</b></td>
+                        <td style="text-align: center;"><b>Current Market Value</b></td>
+                        <td style="text-align: center;"><b>%</b></td>
+                        <td style="text-align: center;"><b>Difference</b></td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="width:3%; padding-left:10px;">1</td>
+                        <td>
+                            <img src="images/faces/jude_bellingham.png" alt="jude_bellingham" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Jude Bellingham</td>
+                        <td></td>
+                        <td style="text-align: center;">CAM</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/spain/real_madrid.png" alt="real_madrid">
+                        </td>
+                        <td style="text-align: center;">Real Madrid</td>
+                        <td style="text-align: center;">20</td>
+                        <td style="text-align: center;">€180.00m</td>
+                        <td style="text-align: center;">50.0 %</td>
+                        <td style="text-align: center;">+€60.00m</td>
+                    </tr>
+                    <tr>
+                        <td style="width:3%; padding-left:10px;">2</td>
+                        <td>
+                            <img src="images/faces/lamine_yamal.png" alt="lamine_yamal" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Lamine Yamal</td>
+                        <td></td>
+                        <td style="text-align: center;">RW</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/spain/barcelona.png" alt="barcelona">
+                        </td>
+                        <td style="text-align: center;">FC Barcelona</td>
+                        <td style="text-align: center;">16</td>
+                        <td style="text-align: center;">€60.00m</td>
+                        <td style="text-align: center;">-</td> 
+                        <td style="text-align: center;">+€60.00m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="width:3%; padding-left:10px;">3</td>
+                        <td>
+                            <img src="images/faces/warren_zaire_emery.png" alt="warren_zaire_emery" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Warren Zaïre-Emery</td>
+                        <td></td>
+                        <td style="text-align: center;">CM</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/france/psg.png" alt="psg">
+                        </td>
+                        <td style="text-align: center;">Paris Saint-Germain</td>
+                        <td style="text-align: center;">17</td>
+                        <td style="text-align: center;">€60.00m</td>
+                        <td style="text-align: center;">200.0 %</td>
+                        <td style="text-align: center;">+€40.00m</td>
+                    </tr>
+                    <tr>
+                        <td style="width:3%; padding-left:10px;">4</td>
+                        <td>
+                            <img src="images/faces/jeremy_doku.png" alt="jeremy_doku" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Jérémy Doku</td>
+                        <td></td>
+                        <td style="text-align: center;">LW</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/england/man_city.png" alt="man_city">
+                        </td>
+                        <td style="text-align: center;">Manchester City</td>
+                        <td style="text-align: center;">21</td>
+                        <td style="text-align: center;">€65.00m</td>
+                        <td style="text-align: center;">132.1 %</td>
+                        <td style="text-align: center;">+€37.00m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="width:3%; padding-left:10px;">5</td>
+                        <td>
+                            <img src="images/faces/evan_ferguson.png" alt="evan_ferguson" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Evan Ferguson</td>
+                        <td></td>
+                        <td style="text-align: center;">CF</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/england/brighton.png" alt="brighton">
+                        </td>
+                        <td style="text-align: center;">Brighton & Hove Albion</td>
+                        <td style="text-align: center;">19</td>
+                        <td style="text-align: center;">€65.00m</td>
+                        <td style="text-align: center;">116.7 %</td>
+                        <td style="text-align: center;">+€35.00m</td>
+                    </tr>
+                    <tr>
+                        <td style="width:3%; padding-left:10px;">6</td>
+                        <td>
+                            <img src="images/faces/takefusa_kubo.png" alt="takefusa_kubo" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Takefusa Kubo</td>
+                        <td></td>
+                        <td style="text-align: center;">RW</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/spain/real_sociedad.png" alt="real_sociedad">
+                        </td>
+                        <td style="text-align: center;">Real Sociedad</td>
+                        <td style="text-align: center;">22</td>
+                        <td style="text-align: center;">€60.00m</td>
+                        <td style="text-align: center;">140.0 %</td> 
+                        <td style="text-align: center;">+€35.00m</td>
+                    </tr> 
+                    <tr style="background-color: #eeeeee;">
+                        <td style="width:3%; padding-left:10px;">7</td>
+                        <td>
+                            <img src="images/faces/joao_neves.png" alt="joao_neves" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>João Neves</td>
+                        <td></td>
+                        <td style="text-align: center;">CDM</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/portugal/sl_benfica.png" alt="sl_benfica">
+                        </td>
+                        <td style="text-align: center;">SL Benfica</td>
+                        <td style="text-align: center;">19</td>
+                        <td style="text-align: center;">€45.00m</td>
+                        <td style="text-align: center;">350.0 %</td>
+                        <td style="text-align: center;">+€35.00m</td>
+                    </tr>
+                    <tr>
+                        <td style="width:3%; padding-left:10px;">8</td>
+                        <td>
+                            <img src="images/faces/viktor_gyökeres.png" alt="viktor_gyökeres" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Viktor Gyökeres</td>
+                        <td></td>
+                        <td style="text-align: center;">CF</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/portugal/sporting_cb.png" alt="sporting_cb">
+                        </td>
+                        <td style="text-align: center;">Sporting CP</td>
+                        <td style="text-align: center;">25</td>
+                        <td style="text-align: center;">€45.00m</td>
+                        <td style="text-align: center;">246.2 %</td>
+                        <td style="text-align: center;">+€32.00m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="width:3%; padding-left:10px;">9</td>
+                        <td>
+                            <img src="images/faces/julian_alvarez.png" alt="julian_alvarez" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Julián Álvarez</td>
+                        <td></td>
+                        <td style="text-align: center;">CF</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/england/man_city.png" alt="man_city">
+                        </td>
+                        <td style="text-align: center;">Manchester City</td>
+                        <td style="text-align: center;">23</td>
+                        <td style="text-align: center;">€90.00m</td>
+                        <td style="text-align: center;">50.0 %</td>
+                        <td style="text-align: center;">+€30.00m</td>
+                    </tr>
+                    <tr>
+                        <td style="width:3%; padding-left:10px;">10</td>
+                        <td>
+                            <img src="images/faces/xavi_simons.png" alt="xavi_simons" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Xavi Simons</td>
+                        <td></td>
+                        <td style="text-align: center;">RW</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/germany/leipzig.png" alt="leipzig">
+                        </td>
+                        <td style="text-align: center;">RB Leipzig</td>
+                        <td style="text-align: center;">20</td>
+                        <td style="text-align: center;">€70.00m</td>
+                        <td style="text-align: center;">75.0 %</td>
+                        <td style="text-align: center;">+€30.00m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="width:3%; padding-left:10px;">11</td>
+                        <td>
+                            <img src="images/faces/mathys_tel.png" alt="mathys_tel" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Mathys Tel</td>
+                        <td></td>
+                        <td style="text-align: center;">CF</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/germany/bayern_munih.png" alt="bayern_munih">
+                        </td>
+                        <td style="text-align: center;">Bayern Munich</td>
+                        <td style="text-align: center;">18</td>
+                        <td style="text-align: center;">€50.00m</td>
+                        <td style="text-align: center;">150.0 %</td>
+                        <td style="text-align: center;">+€30.00m</td>
+                    </tr>
+                    <tr>
+                        <td style="width:3%; padding-left:10px;">12</td>
+                        <td>
+                            <img src="images/faces/cole_palmer.png" alt="cole_palmer" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Cole Palmer</td>
+                        <td></td>
+                        <td style="text-align: center;">CAM</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/england/chelsea.png" alt="chelsea">
+                        </td>
+                        <td style="text-align: center;">Chelsea FC</td>
+                        <td style="text-align: center;">21</td>
+                        <td style="text-align: center;">€45.00m</td>
+                        <td style="text-align: center;">200.0 %</td>
+                        <td style="text-align: center;">+€30.00m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="width:3%; padding-left:10px;">13</td>
+                        <td>
+                            <img src="images/faces/johan_bakayoko.png" alt="johan_bakayoko" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Johan Bakayoko</td>
+                        <td></td>
+                        <td style="text-align: center;">RW</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/holland/psv.png" alt="psv">
+                        </td>
+                        <td style="text-align: center;">PSV Eindhoven</td>
+                        <td style="text-align: center;">20</td>
+                        <td style="text-align: center;">€40.00m</td>
+                        <td style="text-align: center;">300.0 %</td>
+                        <td style="text-align: center;">+€30.00m</td>
+                    </tr>
+                    <tr>
+                        <td style="width:3%; padding-left:10px;">14</td>
+                        <td>
+                            <img src="images/faces/ousmane_diomande.png" alt="ousmane_diomande" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Ousmane Diomande</td>
+                        <td></td>
+                        <td style="text-align: center;">CB</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/portugal/sporting_cb.png" alt="sporting_cb">
+                        </td>
+                        <td style="text-align: center;">Sporting CP</td>
+                        <td style="text-align: center;">20</td>
+                        <td style="text-align: center;">€40.00m</td>
+                        <td style="text-align: center;">300.0 %</td>
+                        <td style="text-align: center;">+€30.00m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="width:3%; padding-left:10px;">15</td>
+                        <td>
+                            <img src="images/faces/victor_boniface.png" alt="victor_boniface" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Victor Bonifacem</td>
+                        <td></td>
+                        <td style="text-align: center;">CF</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/germany/leverkusen.png" alt="leverkusen">
+                        </td>
+                        <td style="text-align: center;">Bayer 04 Leverkusen</td>
+                        <td style="text-align: center;">23</td>
+                        <td style="text-align: center;">€40.00m</td>
+                        <td style="text-align: center;">233.3 %</td>
+                        <td style="text-align: center;">+€28.00m</td>
+                    </tr>
+                    <tr>
+                        <td style="width:3%; padding-left:10px;">16</td>
+                        <td>
+                            <img src="images/faces/serhou_guirassy.png" alt="serhou_guirassy" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Serhou Guirassy</td>
+                        <td></td>
+                        <td style="text-align: center;">CF</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/germany/stuttgart.png" alt="stuttgart">
+                        </td>
+                        <td style="text-align: center;">VfB Stuttgart</td>
+                        <td style="text-align: center;">27</td>
+                        <td style="text-align: center;">€40.00m</td>
+                        <td style="text-align: center;">185.7 %</td>
+                        <td style="text-align: center;">+€26.00m</td>
+                    </tr>
+                    <tr style="background-color: #eeeeee;">
+                        <td style="width:3%; padding-left:10px;">17</td>
+                        <td>
+                            <img src="images/faces/lautaro_martinez.png" alt="lautaro_martinez" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Lautaro Martínez</td>
+                        <td></td>
+                        <td style="text-align: center;">CF</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/italy/inter.png" alt="inter">
+                        </td>
+                        <td style="text-align: center;">Inter Milan</td>
+                        <td style="text-align: center;">26</td>
+                        <td style="text-align: center;">€110.00m</td>
+                        <td style="text-align: center;">29.4 %</td>
+                        <td style="text-align: center;">+€25.00m</td>
+                    </tr>
+                    <tr>
+                        <td style="width:3%; padding-left:10px;">18</td>
+                        <td>
+                            <img src="images/faces/dominik_szoboszlai.png" alt="dominik_szoboszlai" style="width: 50px; height: 60px;">
+                        </td>
+                        <td>Dominik Szoboszlai</td>
+                        <td></td>
+                        <td style="text-align: center;">CM</td>
+                        <td style="text-align: center;">
+                            <img src="images/logos/clubs/england/liverpool.png" alt="liverpool">
+                        </td>
+                        <td style="text-align: center;">Liverpool FC</td>
+                        <td style="text-align: center;">23</td>
+                        <td style="text-align: center;">€75.00m</td>
+                        <td style="text-align: center;">50.0 %</td>
+                        <td style="text-align: center;">+€25.00m</td>
+                    </tr>
+                        <tr style="background-color: #eeeeee;">
+                            <td style="width:3%; padding-left:10px;">19</td>
+                            <td>
+                                <img src="images/faces/levi_colwill.png" alt="levi_colwill" style="width: 50px; height: 60px;">
+                            </td>
+                            <td>Levi Colwill</td>
+                            <td></td>
+                            <td style="text-align: center;">CB</td>
+                            <td style="text-align: center;">
+                                <img src="images/logos/clubs/england/chelsea.png" alt="chelsea">
+                            </td>
+                            <td style="text-align: center;">Chelsea FC</td>
+                            <td style="text-align: center;">20</td>
+                            <td style="text-align: center;">€55.00m</td>
+                            <td style="text-align: center;">83.3 %</td>
+                            <td style="text-align: center;">+€25.00m</td>
+                        </tr>
+                        <tr>
+                            <td style="width:3%; padding-left:10px;">20</td>
+                            <td>
+                                <img src="images/faces/santiago_gimenez.png" alt="santiago_gimenez" style="width: 50px; height: 60px;">
+                            </td>
+                            <td>Santiago Gimenez</td>
+                            <td></td>
+                            <td style="text-align: center;">CF</td>
+                            <td style="text-align: center;">
+                                <img src="images/logos/clubs/holland/feyenoord.png" alt="feyenoord">
+                            </td>
+                            <td style="text-align: center;">Feyenoord Rotterdam</td>
+                            <td style="text-align: center;">22</td>
+                            <td style="text-align: center;">€50.00m</td>
+                            <td style="text-align: center;">100.0 %</td>
+                            <td style="text-align: center;">+€25.00m</td>
+                        </tr>
+                </table>       
+                <div style=" background-color: #1A3151; text-align: right; padding-right: 7px;">
+                    <p style="color: #1A3151;"><br></p>
+                </div>
+            </div>
+        </article>
+    <!-- BIGGEST INCREASES IN MARKET VALUE - End -->       
+    <!-- Article - End -->
+    <!-- Content - End -->
+    <!-- Footer - Start -->        
+    <footer class="row">
+        <div class="col subMiddlePanel">
+            <div class="row">
+
+                <div class="col-3">
+                    <a href="index.html">
+                        <img src="images/logos/tm_footer_logo.png" alt="tm_footer_logo" style="margin: 8%;">
+                    </a>
+                </div>
+
+                <div class="col-9" style="margin-top: 2.5%; flex: auto;">
+                   <a href="https://www.transfermarkt.com/intern/impressum" target="_blank" class="link">Legal Notice</a>
+                   <img src="images/logos/pipeIcon.png" alt="pipeIcon" style="height: 40px; margin-top: -4px;">
+                   
+                   <a href="https://www.transfermarkt.com/intern/web/datenschutz" target="_blank" class="link">Data Protection</a>
+                   <img src="images/logos/pipeIcon.png" alt="pipeIcon" style="height: 40px; margin-top: -4px;">
+
+                   <a href="https://www.transfermarkt.com/intern/anb" target="_blank" class="link">General Conditions Of Use</a>
+                   <img src="images/logos/pipeIcon.png" alt="pipeIcon" style="height: 40px; margin-top: -4px;">
+
+                   <a href="https://www.transfermarkt.com/intern/tmteam" target="_blank" class="link">TM - Team</a>
+                   <img src="images/logos/pipeIcon.png" alt="pipeIcon" style="height: 40px; margin-top: -4px;">
+
+                   <a href="https://www.transfermarkt.com/intern/faq" target="_blank" class="link">FAQ</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>       
+    <!-- Footer - End -->
+</body>
+</html>
